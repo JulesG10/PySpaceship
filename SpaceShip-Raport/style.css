@@ -1,0 +1,34 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#main {
+    width:calc(100% - 280px);
+    height:100%;
+
+    position: absolute;
+    left: 280px;
+    top:0px;
+}
+
+#page-home, #page-game, #page-apiref, #page-lic{
+    height:100%;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+#side-bar{
+    width: 280px;
+}

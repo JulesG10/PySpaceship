@@ -1,0 +1,4 @@
+*.pyc
+SCHEMA.mmd
+build.bat
+run.bat

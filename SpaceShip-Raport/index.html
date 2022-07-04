@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="d-flex" style="height: 100%;">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" id="side-bar">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <img class="bi pe-none me-2" src="./images/ship.png" width="40" height="32" />
+        <span class="fs-4">SpaceShip <span class="fs-6">v1.6.7</span></span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a id="home" class="nav-link active" aria-current="page">
+            <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#home" />
+            </svg>
+            Présentation
+          </a>
+        </li>
+        <li>
+          <a id="game" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#speedometer2" />
+            </svg>
+            Fonctionnement
+          </a>
+        </li>
+        <li>
+          <a id="lic" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#table" />
+            </svg>
+            License
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <button class="btn btn-primary" id="download">Télécharger <img src="./images/download.svg"></button>
+    </div>
+  </div>
+  <div id="main">
+
+    <div id="page-home">
+      <div class="container">
+
+        <h1>Bienvue sur SpaceShip</h1>
+        <p class="lead">Spaceship est un jeu de combat de vaisseaux en solo ou en multijoueur</p>
+        <p>Pour pouvoir ajouter vos plugins ou modifier le code rendez-vous dans la partie
+          <code>Fonctionnement</code>, toutes les informations nécessaire vous seront fournie.
+        </p>
+
+        <h3 class="mt-4">Qu'est ce que SpaceShip ?</h3>
+        <p>Le jeu Spaceship est un jeu d’arcade dans lequel on incarne un vaisseau spatial pour combattre des vaisseaux
+          ennemis en multijoueurs ou en solitaire. Dans le mode solo il faut éliminer un maximum d'ennemis tout en
+          survivant le plus longtemps possible pour récolter un grand nombre de points. Le mode multijoueur est un jeu
+          joueur contre joueur qui consiste à détruire un maximum de vaisseaux de adverses contrôlés par d’autres
+          joueurs, afin de marquer un maximum de points pour augmenter la puissance de son vaisseau.</p>
+
+        <hr class="my-4">
+        <h3 class="mt-4">Mode Solo</h3>
+        <p>
+          Grâce au mode <code>solo</code> , affrontez des IA dans un combat spacial sans pitié dans l'atmosphère de
+          <code>l'exoplanète B-13454</code>. Vous y trouverez trois types d'ennemis farouches :
+          <li>Les Cuirassés, de gros vaisseaux lourds avec beaucoup de vie lançants deux missiles puissants d'un coup.
+          </li>
+          <li>Les Croiseurs, des vaisseaux de taille moyenne avec un nombre de points de vie moyen qui tire un ensemble
+            de faibles balles.</li>
+          <li>Les Intercepteurs, qui sont de petits vaisseaux avec peu de vie mais une cadence de tire très élevée et
+            une puissance de frappe aussi lourde que celle des cuirassés.</li>
+          <br>
+          Pour faire face à ces adversaires belliscistes, vous incarnerez le pilote d'un vaisseaux d'une cadence de tire
+          hors-norme ! Mais faites attention
+          à l'état de votre vaisseaux... Votre barre de vie n'est pas infinie et vous devez atteindre votre but: vous
+          devez amasser un maximum de points
+          en éliminants des ennemmis, en survivant longtemps ou encore en rentrant en collision avec un adversaire, ce
+          qui néanmoins peut vous coûter la
+          vie.
+        </p>
+        <div class="text-center">
+          <img src="./images/solo.png" class="rounded" alt="..." width="90%">
+        </div>
+        <br>
+        <hr class="my-4">
+
+        <h3 class="mt-4">Multijoueurs <span class="fs-6">(beta)</span></h3>
+        <p>
+          Avec le mode <code>Multi</code>, combattez vos amis dans une bataille générale aérienne impitoyable ! Vous
+          commencerez par être au commande d'un biplan
+          rapide, mais fébrile... Vous vous renforcerez en abattant vos ennemis et en survivant le plus longtemps
+          possible, de cette manière votre avion
+          gagnera en experience et donc en niveaux aussi bien qu'en vie et en puissance de frappe... mais sa vitesse
+          s'en trouvera fortement diminuée.
+          12 niveaux sont disponibles, ainsi, en partant d'un biplan, en passant un chasseur et un bombardier, 12 types
+          d'avions sont disponibles et
+          jouables pour vous permettre de devenir le maitre des airs ! Il pourra vous arriver de vous faire éliminer par
+          vos adversaires mais aucune
+          inquiétude ! Le niveau de votre avion n'en sera pas impacté et vous pourrez continuer à règner sur les cieux
+          grâce à vos talent de pilote et la
+          puissance de votre appareil.
+
+          Pour jouer en multijoueur, vous pouvez héberger ou rejoindre la partie sur un réseau local.
+        </p>
+
+        <hr class="my-4">
+      </div>
+    </div>
+    <div id="page-game" hidden="true">
+      <div class="container">
+
+        <h1>Fonctionnement de SpaceShip</h1>
+        <p class="lead">Nous allons analyser le fonctionnement interne de code de SpaceShip.</p>
+
+        <h3 class="mt-4">Moteur</h3>
+        <p>
+          Le moteur du jeux est entièrement basé sur <code>pygame</code>. Il contient une multitude de fonctions
+          permetant de controller le jeux. Comme par exemple: les graphisme, vecteur, collision, input. Le moteur est
+          également responsable de la gestion des évènements. Il est possible de l'utiliser pour créer des jeux
+          personnalisés.
+        </p>
+        <hr class="my-4">
+        <h3 class="mt-4">TCP Client/Server</h3>
+        <p>
+          La partie du jeux multijoueur est basé sur le protocole TCP/IP. Il permet de communiquer entre deux joueurs.
+          Le serveur permet de gérer les connexions entrantes et les connexions sortantes pour le jeux.
+          Le client lui communique avec le server pour afficher les autres joueurs en simultaner.
+          Pour pouvoir se connecter le client utilise un code générer en fonction de l'ip du serveur.
+          En voici les fontions:
+        <pre><code>
+import string
+
+def encode_ip(ip):
+    alphabet = string.ascii_lowercase
+    code = ""
+    for num in ip.split("."):
+        num = int(num)
+        if num > 25:
+            s = str(num)
+            for i in range(0, len(s)):
+                code += alphabet[int(s[i])]
+            code += "-"
+        else:
+            code += alphabet[num] + "-"
+
+    return code[:-1]
+
+
+def decode_ip(code):
+    alphabet = string.ascii_lowercase
+    ip = ""
+    
+    for charl in code.split("-"):
+        for char in charl:
+            ip += str(alphabet.index(char))
+        ip += "."
+
+    return ip[:-1]
+          </code></pre>
+        </p>
+        <hr class="my-4">
+        <h3 class="mt-4">Les Paramètres</h3>
+        <p>
+          Les paramètres du jeux servent a définir les touches du jeux. Par défaut, les touches sont:
+          <li><kbd>z</kbd> Avancer</li>
+          <li><kbd>q</kbd> Gauche</li>
+          <li><kbd>d</kbd> Droite</li>
+          <li><kbd>s</kbd> Bas</li>
+          <li><kbd>SPACE</kbd> ou <kbd>Click</kbd> Tirer</li>
+
+        </p>
+        <hr class="my-4">
+        <h3 class="mt-4">Plugin & Multi (beta)</h3>
+        <p>
+          Le joux multijoueur n'est pas encore terminer, mais il est possible de l'utiliser.
+          Pour l'instant, le system de plugin est en cours de développement également.
+          La beta du jeux permet de voir les autres joueurs et les balles qu'ils tirent. Il reste encore à développer
+          les fonctionnalités.
+          Voici une liste des objectifs pour la release final:
+          <li>system de particules</li>
+          <li>plugins</li>
+          <li>collision</li>
+          <li>anti-cheat server system</li>
+          <li>mouvement joueur optimisation</li>
+          <li>sauvegarder les touches dans un fichier</li>
+          <li>générer la map procéduralement</li>
+          Pour plus d'information sur le dévollepement voir dans le <code>code source</code> le fichier de patch note
+          <code>README.md</code>.
+        </p>
+        <hr class="my-4">
+      </div>
+    </div>
+
+    <div id="page-lic" hidden="true">
+      <h1>MIT License</h1>
+      <span class="text-secondary">Copyright (c) 2020 Jules GARCIA</span>
+      <br>
+      <br>
+      <p>
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+        documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+        the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
+        to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        <br>
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of
+        the Software.
+        <br>
+        <br>
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+        THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+        DEALINGS IN THE SOFTWARE.
+      </p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
